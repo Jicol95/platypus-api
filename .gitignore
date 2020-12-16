@@ -4,3 +4,6 @@
 
 /Platypus/.vs/Platypus
 /Platypus/obj
+/.vs
+/Platypus.Data/obj
+/Platypus.Model/obj

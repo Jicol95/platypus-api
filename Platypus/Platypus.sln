@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platypus", "Platypus.csproj", "{8A86ECEE-4469-4AC8-A4D3-F12131313B4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platypus", "Platypus.csproj", "{8A86ECEE-4469-4AC8-A4D3-F12131313B4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platypus.Data", "..\Platypus.Data\Platypus.Data.csproj", "{7EEF494A-3E9E-410C-912C-6C58F5E60BC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platypus.Model", "..\Platypus.Model\Platypus.Model.csproj", "{8DEFD941-9E60-4394-B3DA-BBD54EC1D753}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{8A86ECEE-4469-4AC8-A4D3-F12131313B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A86ECEE-4469-4AC8-A4D3-F12131313B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A86ECEE-4469-4AC8-A4D3-F12131313B4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EEF494A-3E9E-410C-912C-6C58F5E60BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EEF494A-3E9E-410C-912C-6C58F5E60BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EEF494A-3E9E-410C-912C-6C58F5E60BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EEF494A-3E9E-410C-912C-6C58F5E60BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DEFD941-9E60-4394-B3DA-BBD54EC1D753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DEFD941-9E60-4394-B3DA-BBD54EC1D753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DEFD941-9E60-4394-B3DA-BBD54EC1D753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DEFD941-9E60-4394-B3DA-BBD54EC1D753}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
