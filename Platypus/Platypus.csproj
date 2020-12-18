@@ -14,4 +14,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="5.5.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Platypus.Data\Platypus.Data.csproj" />
+    <ProjectReference Include="..\Platypus.Security\Platypus.Security.csproj" />
+  </ItemGroup>
 </Project>

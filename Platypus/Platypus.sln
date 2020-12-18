@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platypus.Model", "..\Platyp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playpus.Repository", "..\Playpus.Repository\Playpus.Repository.csproj", "{0CB806B4-9AE1-41F5-96A8-37115010EDA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platypus.Security", "..\Platypus.Security\Platypus.Security.csproj", "{A7CFADBC-3594-4FEE-B7D1-E29AB8C81705}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0CB806B4-9AE1-41F5-96A8-37115010EDA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CB806B4-9AE1-41F5-96A8-37115010EDA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CB806B4-9AE1-41F5-96A8-37115010EDA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7CFADBC-3594-4FEE-B7D1-E29AB8C81705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7CFADBC-3594-4FEE-B7D1-E29AB8C81705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7CFADBC-3594-4FEE-B7D1-E29AB8C81705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7CFADBC-3594-4FEE-B7D1-E29AB8C81705}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
