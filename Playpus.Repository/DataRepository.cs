@@ -1,13 +1,13 @@
 ﻿using EFCore.BulkExtensions;
 using Microsoft.EntityFrameworkCore;
-using Playpus.Repository.Interface;
+using Platypus.Repository.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Playpus.Repository {
+namespace Platypus.Repository {
 
     public class DataRepository<T> : IDataRepository<T> where T : class {
         private readonly DbContext context;

@@ -14,15 +14,25 @@ namespace Platypus.Security {
     public class TokenService : ITokenService {
         private readonly string key;
         private readonly int tokenExpiryMins;
+        private readonly int refreshTokenExpiryMins;
+        private readonly int maxLoginAttempts;
 
         public TokenService(IOptions<SecuritySettings> settings) {
             if (settings != null && settings.Value != null) {
                 this.key = settings.Value.Key;
                 this.tokenExpiryMins = settings.Value.TokenExpiryMins ?? 5;
+                this.refreshTokenExpiryMins = settings.Value.RefreshTokenExpiryMins ?? 60;
+                this.maxLoginAttempts = settings.Value.MaxLoginAttempts ?? 5;
             }
         }
 
-        public string GenerateAccessToken(Guid userId, string firstname, string lastname, Guid? sellerId, Guid? buyerId) {
+        public int TokenExpiryMins => tokenExpiryMins;
+
+        public int RefreshTokenExpiryMins => refreshTokenExpiryMins;
+
+        public int MaxLoginAttempts => maxLoginAttempts;
+
+        public string GenerateAccessToken(Guid userId, string firstname, string lastname) {
             JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
             byte[] key = Encoding.ASCII.GetBytes(this.key);
 

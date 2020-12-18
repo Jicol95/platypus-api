@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Playpus.Repository.Interface {
+namespace Platypus.Repository.Interface {
 
     public interface IDataRepository<T> where T : class {
 

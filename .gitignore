@@ -10,3 +10,10 @@
 /Platypus.Model/Platypus.Model.csproj.user
 /Playpus.Repository/obj
 /Platypus.Security/obj
+/Platypus/bin/Debug/netcoreapp3.1
+/Platypus.Data/bin/Debug/netcoreapp3.1
+/Platypus.Model/bin/Debug/netcoreapp3.1
+/Platypus.Security/bin/Debug/netcoreapp3.1
+/Platypus.Service/bin/Debug/netcoreapp3.1
+/Platypus.Service/obj
+/Playpus.Repository/bin/Debug/netcoreapp3.1

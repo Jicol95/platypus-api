@@ -18,5 +18,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Platypus.Data\Platypus.Data.csproj" />
     <ProjectReference Include="..\Platypus.Security\Platypus.Security.csproj" />
+    <ProjectReference Include="..\Platypus.Service\Platypus.Service.csproj" />
   </ItemGroup>
 </Project>

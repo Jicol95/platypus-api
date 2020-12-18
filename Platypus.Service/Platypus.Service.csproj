@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Platypus.Data\Platypus.Data.csproj" />
+    <ProjectReference Include="..\Platypus.Model\Platypus.Model.csproj" />
+    <ProjectReference Include="..\Platypus.Security\Platypus.Security.csproj" />
+    <ProjectReference Include="..\Playpus.Repository\Platypus.Repository.csproj" />
+  </ItemGroup>
+</Project>
