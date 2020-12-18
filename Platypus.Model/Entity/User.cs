@@ -33,15 +33,9 @@ namespace Platypus.Model.Entity {
 
         public Guid? PasswordResetToken { get; set; }
 
-        public Guid? EmailVerificationToken { get; set; }
-
         [Required]
         [StringLength(255)]
         public string Salt { get; set; }
-
-        public bool Deleted { get; set; }
-
-        public bool EmailVerified { get; set; }
 
         public DateTime CreatedUtc { get; set; }
 
