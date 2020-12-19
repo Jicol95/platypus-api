@@ -17,6 +17,8 @@ using Platypus.Model.Mapping;
 using Platypus.Security;
 using Platypus.Security.Interface;
 using Platypus.Security.Settings;
+using Platypus.Service.Data.BankAccountServices;
+using Platypus.Service.Data.BankAccountServices.Interface;
 using Platypus.Service.Data.TokenServices;
 using Platypus.Service.Data.TokenServices.Interface;
 using Platypus.Service.Data.UnitOfWork;
@@ -85,6 +87,8 @@ namespace Platypus.Extensions {
         }
 
         private static void ConfigureDataServices(this IServiceCollection services) {
+            services.AddScoped<IBankAccountCreationService, BankAccountCreationService>();
+            services.AddScoped<IBankAccountGetAllService, BankAccountGetAllService>();
             services.AddScoped<ITokenRefreshService, TokenRefreshService>();
             services.AddScoped<ITokenRequestService, TokenRequestService>();
             services.AddScoped<IUserCreationService, UserCreationService>();

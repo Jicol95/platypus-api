@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Platypus.Model.Constants {
 
-    public static class TransactionTypeConstant {
+    public static class TransactionCategoryConstant {
         public static readonly string Shopping = "SHP";
         public static readonly string Bills = "BIL";
         public static readonly string General = "GEN";
