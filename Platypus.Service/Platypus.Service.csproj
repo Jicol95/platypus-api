@@ -8,6 +8,6 @@
     <ProjectReference Include="..\Platypus.Data\Platypus.Data.csproj" />
     <ProjectReference Include="..\Platypus.Model\Platypus.Model.csproj" />
     <ProjectReference Include="..\Platypus.Security\Platypus.Security.csproj" />
-    <ProjectReference Include="..\Playpus.Repository\Platypus.Repository.csproj" />
+    <ProjectReference Include="..\Platypus.Repository\Platypus.Repository.csproj" />
   </ItemGroup>
 </Project>

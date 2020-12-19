@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platypus.Data", "..\Platypu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platypus.Model", "..\Platypus.Model\Platypus.Model.csproj", "{8DEFD941-9E60-4394-B3DA-BBD54EC1D753}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platypus.Repository", "..\Playpus.Repository\Platypus.Repository.csproj", "{0CB806B4-9AE1-41F5-96A8-37115010EDA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platypus.Security", "..\Platypus.Security\Platypus.Security.csproj", "{A7CFADBC-3594-4FEE-B7D1-E29AB8C81705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platypus.Security", "..\Platypus.Security\Platypus.Security.csproj", "{A7CFADBC-3594-4FEE-B7D1-E29AB8C81705}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platypus.Service", "..\Platypus.Service\Platypus.Service.csproj", "{01E3177A-E66D-4493-8421-38DB462F320C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platypus.Service", "..\Platypus.Service\Platypus.Service.csproj", "{01E3177A-E66D-4493-8421-38DB462F320C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platypus.Repository", "..\Platypus.Repository\Platypus.Repository.csproj", "{51A91FCB-AE79-45E8-8253-1B47741D2115}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +33,6 @@ Global
 		{8DEFD941-9E60-4394-B3DA-BBD54EC1D753}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DEFD941-9E60-4394-B3DA-BBD54EC1D753}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DEFD941-9E60-4394-B3DA-BBD54EC1D753}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0CB806B4-9AE1-41F5-96A8-37115010EDA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0CB806B4-9AE1-41F5-96A8-37115010EDA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0CB806B4-9AE1-41F5-96A8-37115010EDA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0CB806B4-9AE1-41F5-96A8-37115010EDA8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A7CFADBC-3594-4FEE-B7D1-E29AB8C81705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A7CFADBC-3594-4FEE-B7D1-E29AB8C81705}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7CFADBC-3594-4FEE-B7D1-E29AB8C81705}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{01E3177A-E66D-4493-8421-38DB462F320C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01E3177A-E66D-4493-8421-38DB462F320C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01E3177A-E66D-4493-8421-38DB462F320C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51A91FCB-AE79-45E8-8253-1B47741D2115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A91FCB-AE79-45E8-8253-1B47741D2115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A91FCB-AE79-45E8-8253-1B47741D2115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A91FCB-AE79-45E8-8253-1B47741D2115}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
