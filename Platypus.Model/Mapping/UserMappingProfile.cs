@@ -9,6 +9,7 @@ namespace Platypus.Model.Mapping {
         public UserMappingProfile() {
             CreateMap<User, UserModel>();
             CreateMap<UserCreateModel, User>();
+            CreateMap<UserUpdateModel, User>();
         }
     }
 }

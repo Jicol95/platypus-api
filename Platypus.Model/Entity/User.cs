@@ -39,6 +39,8 @@ namespace Platypus.Model.Entity {
 
         public DateTime CreatedUtc { get; set; }
 
-        public IList<UserToken> UserTokens { get; set; }
+        public ICollection<UserToken> UserTokens { get; set; }
+
+        public ICollection<BankAccount> BankAccounts { get; set; }
     }
 }

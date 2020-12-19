@@ -88,6 +88,7 @@ namespace Platypus.Extensions {
             services.AddScoped<ITokenRefreshService, TokenRefreshService>();
             services.AddScoped<ITokenRequestService, TokenRequestService>();
             services.AddScoped<IUserCreationService, UserCreationService>();
+            services.AddScoped<IUserUpdateService, UserUpdateService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 

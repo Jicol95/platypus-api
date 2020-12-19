@@ -8,6 +8,8 @@ namespace Platypus.Data.Context {
         public DataContext(DbContextOptions<DataContext> options) : base(options) {
         }
 
+        public virtual DbSet<BankAccount> BankAccounts { get; set; }
+        public virtual DbSet<Transaction> Transactions { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserToken> UserTokens { get; set; }
 
