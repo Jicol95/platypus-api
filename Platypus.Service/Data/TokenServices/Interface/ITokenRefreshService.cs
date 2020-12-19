@@ -1,7 +1,7 @@
 ﻿using Platypus.Model.Data.Security;
 using System.Threading.Tasks;
 
-namespace Platypus.Service.Data.Token.Interface {
+namespace Platypus.Service.Data.TokenServices.Interface {
 
     public interface ITokenRefreshService {
 

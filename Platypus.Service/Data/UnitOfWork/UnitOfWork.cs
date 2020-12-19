@@ -1,7 +1,7 @@
 ﻿using Platypus.Data.Context;
 using Platypus.Repository;
 using Platypus.Repository.Interface;
-using Platypus.Service.Data.Interface;
+using Platypus.Service.Data.UnitOfWork.Interface;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

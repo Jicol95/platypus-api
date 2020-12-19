@@ -1,7 +1,7 @@
 ﻿using Platypus.Repository.Interface;
 using System.Threading.Tasks;
 
-namespace Platypus.Service.Data.Interface {
+namespace Platypus.Service.Data.UnitOfWork.Interface {
 
     public interface IUnitOfWork {
 

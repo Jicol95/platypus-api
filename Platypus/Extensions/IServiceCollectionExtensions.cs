@@ -17,10 +17,12 @@ using Platypus.Model.Mapping;
 using Platypus.Security;
 using Platypus.Security.Interface;
 using Platypus.Security.Settings;
-using Platypus.Service.Data.Interface;
-using Platypus.Service.Data.Token;
-using Platypus.Service.Data.Token.Interface;
+using Platypus.Service.Data.TokenServices;
+using Platypus.Service.Data.TokenServices.Interface;
 using Platypus.Service.Data.UnitOfWork;
+using Platypus.Service.Data.UnitOfWork.Interface;
+using Platypus.Service.Data.UserServices;
+using Platypus.Service.Data.UserServices.Interface;
 using System.Collections.Generic;
 using System.IO.Compression;
 using System.Text;
@@ -83,9 +85,10 @@ namespace Platypus.Extensions {
         }
 
         private static void ConfigureDataServices(this IServiceCollection services) {
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ITokenRefreshService, TokenRefreshService>();
             services.AddScoped<ITokenRequestService, TokenRequestService>();
+            services.AddScoped<IUserCreationService, UserCreationService>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 
         private static void ConfigureCompression(this IServiceCollection services) {

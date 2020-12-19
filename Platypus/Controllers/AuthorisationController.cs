@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Platypus.Model.Data.Security;
-using Platypus.Service.Data.Token.Interface;
+using Platypus.Service.Data.TokenServices.Interface;
 using System.Threading.Tasks;
 
 namespace Platypus.Controllers {
@@ -23,7 +23,7 @@ namespace Platypus.Controllers {
         [ProducesResponseType(200, Type = typeof(TokenModel))]
         [ProducesResponseType(401)]
         [AllowAnonymous]
-        public async Task<IActionResult> Token(TokenRequestModel model) {
+        public async Task<IActionResult> Token([FromBody]TokenRequestModel model) {
             TokenModel result = await tokenRequestService.AuthenticateAsync(model);
 
             if (result == null || result.AccessToken == null) {
@@ -37,7 +37,7 @@ namespace Platypus.Controllers {
         [ProducesResponseType(200, Type = typeof(TokenModel))]
         [ProducesResponseType(401)]
         [AllowAnonymous]
-        public async Task<IActionResult> RefreshToken(TokenModel model) {
+        public async Task<IActionResult> RefreshToken([FromBody]TokenModel model) {
             TokenModel result = await tokenRefreshService.RefreshAsync(model);
 
             if (result == null || result.AccessToken == null) {

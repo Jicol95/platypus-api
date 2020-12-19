@@ -4,13 +4,13 @@ using Platypus.Model.Data.Security;
 using Platypus.Model.Data.User;
 using Platypus.Model.Entity;
 using Platypus.Security.Interface;
-using Platypus.Service.Data.Interface;
-using Platypus.Service.Data.Token.Interface;
+using Platypus.Service.Data.TokenServices.Interface;
+using Platypus.Service.Data.UnitOfWork.Interface;
 using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace Platypus.Service.Data.Token {
+namespace Platypus.Service.Data.TokenServices {
 
     public class TokenRefreshService : ITokenRefreshService {
         private readonly IMapper mapper;
