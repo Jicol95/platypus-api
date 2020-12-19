@@ -100,6 +100,7 @@ namespace Platypus.Extensions {
         private static void ConfigureAutoMapper(this IServiceCollection services) {
             services.AddAutoMapper(
                 typeof(Startup),
+                typeof(BankAccountMappingProfile),
                 typeof(UserMappingProfile));
         }
 
