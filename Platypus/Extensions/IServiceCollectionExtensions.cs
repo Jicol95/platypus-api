@@ -22,6 +22,7 @@ using Platypus.Service.Data.BankAccountServices.Interface;
 using Platypus.Service.Data.TokenServices;
 using Platypus.Service.Data.TokenServices.Interface;
 using Platypus.Service.Data.TransactionServices;
+using Platypus.Service.Data.TransactionServices.Interface;
 using Platypus.Service.Data.UnitOfWork;
 using Platypus.Service.Data.UnitOfWork.Interface;
 using Platypus.Service.Data.UserServices;
@@ -91,6 +92,7 @@ namespace Platypus.Extensions {
             services.AddScoped<IBankAccountCreationService, BankAccountCreationService>();
             services.AddScoped<IBankAccountGetAllService, BankAccountGetAllService>();
             services.AddScoped<ITransactionCreationService, TransactionCreationService>();
+            services.AddScoped<ITransactionGetByDateService, TransactionGetByDateService>();
             services.AddScoped<ITokenRefreshService, TokenRefreshService>();
             services.AddScoped<ITokenRequestService, TokenRequestService>();
             services.AddScoped<IUserCreationService, UserCreationService>();

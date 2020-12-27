@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Platypus.Model.Data.Transaction;
+using Platypus.Model.Query;
 using Platypus.Service.Data.TransactionServices;
+using Platypus.Service.Data.TransactionServices.Interface;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Platypus.Controllers {
@@ -9,9 +12,22 @@ namespace Platypus.Controllers {
     [ApiController]
     public class TransactionController : ControllerBase {
         private readonly ITransactionCreationService transactionCreationService;
+        private readonly ITransactionGetByDateService transactionGetByDateService;
 
-        public TransactionController(ITransactionCreationService transactionCreationService) {
+        public TransactionController(
+            ITransactionCreationService transactionCreationService,
+            ITransactionGetByDateService transactionGetByDateService) {
             this.transactionCreationService = transactionCreationService;
+            this.transactionGetByDateService = transactionGetByDateService;
+        }
+
+        [HttpGet]
+        [ProducesResponseType(200, Type = typeof(IList<TransactionModel>))]
+        [ProducesResponseType(401)]
+        public async Task<IActionResult> GetTransactionByDate([FromQuery] DateQueryModel model) {
+            IList<TransactionModel> transactions = await transactionGetByDateService.GetAsync(model.FromUtc);
+
+            return Ok(transactions);
         }
 
         [HttpPost]
