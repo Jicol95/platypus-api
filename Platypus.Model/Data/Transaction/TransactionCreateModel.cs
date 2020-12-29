@@ -8,9 +8,15 @@ namespace Platypus.Model.Data.Transaction {
     public class TransactionCreateModel : IValidatableObject {
         public TransactionType Type { get; set; }
 
+        [Required]
+        [StringLength(3)]
         public string Category { get; set; }
 
         public decimal Amount { get; set; }
+
+        [Required]
+        [StringLength(255)]
+        public string VendorName { get; set; }
 
         public DateTime PurchaseDateUtc { get; set; }
 

@@ -19,6 +19,10 @@ namespace Platypus.Model.Entity {
         [StringLength(3)]
         public string Category { get; set; }
 
+        [Required]
+        [StringLength(255)]
+        public string VendorName { get; set; }
+
         [Column(TypeName = "decimal(19,4)")]
         public decimal Amount { get; set; }
 

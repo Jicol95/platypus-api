@@ -24,8 +24,8 @@ namespace Platypus.Controllers {
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(IList<TransactionModel>))]
         [ProducesResponseType(401)]
-        public async Task<IActionResult> GetTransactionByDate([FromQuery] DateQueryModel model) {
-            IList<TransactionModel> transactions = await transactionGetByDateService.GetAsync(model.FromUtc);
+        public IActionResult GetTransactionByDate([FromQuery] TransactionQueryModel model) {
+            IList<TransactionModel> transactions = transactionGetByDateService.Get(model);
 
             return Ok(transactions);
         }
